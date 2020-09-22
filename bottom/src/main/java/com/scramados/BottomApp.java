@@ -3,12 +3,10 @@
  */
 package com.scramados;
 
-public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
+import org.reflections.util.ClasspathHelper;
 
+public class BottomApp {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        System.out.println(ClasspathHelper.forPackage("com.scramados"));
     }
 }
